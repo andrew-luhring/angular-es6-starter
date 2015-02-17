@@ -4,28 +4,9 @@
 # Bootstrapping stuff
 
   </header>
-<aside>
-#### Key:
- <dl>
-  <dt> "|=>" means</dt>
-  <dd>
 
- [file]()  invokes
- &nbsp; &nbsp; |=> [another file]() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  [and [another file ]() has [these dependencies]() ]
+***
 
-  </dd>
-  <dt>indentation implies a 'step into' the next file in the cascade.</dt>
-  <dd>ex.
-
-[init.js]()
-&nbsp; |=> [file.js]() invoked via "[init.js]()"
-&nbsp; |=> [another.js]() also invoked in [main.js]()
-&nbsp; &nbsp; &nbsp; &nbsp; |=> [another-another.js]() invoked in "[another.js]()"
-&nbsp; |=> [yet-another.js]() which is also invoked by "[init.js]()"
-
-  </dd>
- </dl>
-</aside>
 <section>
 
   The way the js is pretty easy to understand if you see the dependency tree/algorithm:
@@ -58,6 +39,30 @@ directory:
 ```
 js/{moduleName}/{moduleName}.js  <--- collects and defines all controllers, services, etc
 ```
+
+<aside>
+#### Key:
+ <dl>
+  <dt> "|=>" means</dt>
+  <dd>
+
+ [file]()  invokes
+ &nbsp; &nbsp; |=> [another file]() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  [and [another file ]() has [these dependencies]() ]
+
+  </dd>
+  <dt>indentation implies a 'step into' the next file in the cascade.</dt>
+  <dd>ex.
+
+[init.js]()
+&nbsp; |=> [file.js]() invoked via "[init.js]()"
+&nbsp; |=> [another.js]() also invoked in [main.js]()
+&nbsp; &nbsp; &nbsp; &nbsp; |=> [another-another.js]() invoked in "[another.js]()"
+&nbsp; |=> [yet-another.js]() which is also invoked by "[init.js]()"
+
+  </dd>
+ </dl>
+</aside>
+
 
 When I first saw someone structure their application that way, I thought it was stupid, tedious,
 and overly verbose, so I wrote it off.
