@@ -128,6 +128,12 @@ js/{moduleName}/{moduleName}.js  <--- collects and defines all controllers, serv
 </aside>
 
 
+***
+
+### Wow, that's a lot to do in order to write a javascript file
+
+**No, it isn't.**
+
 When I first saw someone structure their application that way, I thought it was stupid, tedious,
 and overly verbose, so I wrote it off.
 And then I worked on a large project where the application was not structured this way;
@@ -138,7 +144,6 @@ Never again.
 Declare one component per file. It's so much easier to test and understand small chunks of stuff.
 It takes 15 seconds per component to do it this way and it will save you days of scrolling, fixing
 conflicts, etc.
-
 
 </section>
 </main>
