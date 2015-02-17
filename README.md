@@ -1,4 +1,23 @@
+
+<section>
+
+
+# File structure
+
+| directory | purpose | special note |
+|:---|:----|:---|
+| /config/ | configuration files for test runners. | |
+| /tests/ | where test files go | test directory mirrors public/js directory. |
+| /public/ | public root; everything gets served from here. |
+| /public/js/ | js files |
+| /public/lib/ | external library files go here | dependencies are installed / managed with [bower](http://bower.io/) |
+| /public/views/ | template html files for your angular directives.|
+| /public/less/ | css preprocessor|
+
+</section>
+
 <main>
+
   <header>
 
 # Bootstrapping stuff
@@ -75,22 +94,6 @@ Declare one component per file. It's so much easier to test and understand small
 It takes 15 seconds per component to do it this way and it will save you days of scrolling, fixing
 conflicts, etc.
 
-
-</section>
-<section>
-
-
-# File structure
-
-| directory | purpose | special note |
-|:---|:----|:---|
-| /config/ | configuration files for test runners. | |
-| /tests/ | where test files go | test directory mirrors public/js directory. |
-| /public/ | public root; everything gets served from here. |
-| /public/js/ | js files |
-| /public/lib/ | external library files go here | dependencies are installed / managed with [bower](http://bower.io/) |
-| /public/views/ | template html files for your angular directives.|
-| /public/less/ | css preprocessor|
 
 </section>
 </main>
