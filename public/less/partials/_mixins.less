@@ -1,0 +1,30 @@
+.clear_margins(){
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -moz-margin-before: 0;
+  -moz-margin-after: 0;
+  -moz-margin-start: 0;
+  -moz-margin-end: 0;
+}
+.clear_paddings(){
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  -moz-padding-start: 0;
+  -moz-padding-end: 0;
+}
+.clear_border(){
+  border: none;
+}
+.clear_appearance(){
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance: none;
+}
+.clear_all(){
+  .clear_appearance();
+  .clear_border();
+  .clear_margins();
+  .clear_paddings();
+}

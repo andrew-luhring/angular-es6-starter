@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class = "no-js" >
+<head >
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta charset="utf-8">
+  <meta name="robots" content="index,follow" />
+  <meta name="HandheldFriendly" content="True" />
+  <!--[if lte IE 9]><script type="text/javascript">console = {}; console.log = function(){};</script><![endif]-->
+
+  <script type="text/javascript" src="lib/modernizr.js"></script>
+
+
+  <link type="text/css" href="css/style.css" rel="stylesheet">
+  <script src="lib/traceur/traceur.js"></script>
+  <script type="text/javascript" src='lib/angular/angular.js'></script >
+  <script type="text/javascript" src="lib/lodash/dist/lodash.compat.js"></script >
+  <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script >
+  <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.js"></script >
+</head >
+
+<body >
+<a class = "skiptocontent" >Skip to content</a >
+<a class = "skiptonavigation" >Skip to navigation menu</a >
+<header class = "site-header" role = "banner" >
+  <h1 class = "site-heading" ng-controller="HeaderController as header">
+    <a href = "{{header.href}}" >{{header.text}}</a >
+  </h1>
+  <nav class = "nav-main" ng-controller="NavController as nav">
+    <ul  class = "nav" ng-repeat="link in nav.links">
+      <li href="link.href" class="nav-link">{{link.text}}</li>
+    </ul >
+  </nav >
+</header >
+
+<nav class="breadcrumb-container" ng-controller="BreadcrumbController as bread">
+  <ul class="breadcrumb-list" ng-repeat="crumb in bread.crumb">
+    <li class="breadcrumb-list-item">
+      <a href="{{crumb.href}}" class="breadcrumb-list-link">{{crumb.text}}</a>
+    </li>
+  </ul>
+
+</nav>
+<main id="content"
+      role="main"
+      class="page-content"
+      ng-controller="MainController as main"
+      data-page="{{main.page.id}}">
+  <header>{{main.page.header}}</header>
+  {{main.page.content}}
+</main>
+
+<footer class="page-footer"></footer>
+
+<!--[if lte IE 10]> <p class="browsehappy" style="margin-top: 10px; ">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+<script type="module" src="js/init/apps_init.js"></script >
+<script type="module" src="js/init/apps_bootstrap.js"></script >
+<script >
+  new traceur.WebPageTranscoder(document.location.href).run(function() {
+  });
+</script >
+</body >
+
+</html >

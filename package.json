@@ -1,0 +1,56 @@
+{
+  "name": "default",
+  "version": "0.1.0",
+  "description": "",
+  "main": "controller.js",
+  "private": "true",
+  "engines": {
+    "node": ">=0.10.26"
+  },
+  "dependencies": {
+    "body-parser": "^1.2.1",
+    "bower": "^1.3.2",
+    "errorhandler": "^1.0.1",
+    "express": "^4.3.1",
+    "express-session": "^1.2.0",
+    "less": "^1.7.0",
+    "node-dev": "^2.3.0",
+    "phantomjs": "^1.9.7-14"
+  },
+  "devDependencies": {
+    "browserstack-webdriver": "^2.41.1",
+    "grunt": "^0.4.4",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-es6-module-transpiler": "^0.6.0",
+    "grunt-exec": "^0.4.5",
+    "grunt-kss": "~0.3.1",
+    "grunt-traceur": "^0.5.1",
+    "jsdoc": "^3.3.0-alpha9",
+    "karma": "^0.12.9",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-coverage": "^0.2.1",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.1.5",
+    "karma-mocha-reporter": "^0.2.3",
+    "karma-ng-html2js-preprocessor": "^0.1.0",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-requirejs": "^0.2.1",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-traceur-preprocessor": "^0.4.0",
+    "kss": "^0.3.7",
+    "method-override": "^1.0.2",
+    "morgan": "^1.1.1",
+    "protractor": "^0.23.1",
+    "requirejs": "^2.1.11",
+    "serve-static": "^1.1.0"
+  },
+  "scripts": {
+    "start": "node --harmony $* ./node_modules/.bin/node-dev controller.js",
+    "postinstall": "node --harmony $* ./node_modules/.bin/bower install;",
+    "test": "node --harmony $* ./node_modules/.bin/grunt verify --verbose"
+  },
+  "author": "Andrew Luhring"
+}

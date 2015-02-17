@@ -1,0 +1,11 @@
+js/*.min.*.js
+js/*jquery*
+*jquery*
+*min*
+**/*.jquery*
+**js/*.min*
+**/*compressed*
+**/*compiled*
+**/acc.*
+**/hybris.cms.live.edit.js
+**/fabory.register.js

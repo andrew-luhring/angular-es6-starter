@@ -1,0 +1,47 @@
+{
+  "laxcomma": true
+, "bitwise": true
+, "curly": true
+, "esnext": true
+, "eqeqeq": true
+, "forin": true
+, "latedef": true
+, "newcap": true
+, "noarg": true
+, "nonew": false
+, "undef": true
+, "unused": false
+, "trailing": false
+, "node": true
+, "smarttabs": true
+, "debug": true
+, "sub": true
+, "supernew": true
+, "browser": true
+, "devel": true
+, "strict": true
+, "globals": {
+   "jquery" : true
+  , "jQuery" : true
+  , "angular" : true
+  ,  "_" : true
+  , "describe": true
+  , "ddescribe": true
+  , "xdescribe": true
+  , "spyOn": true
+  , "define": true
+  , "require": true
+  , "requirejs": true
+  , "Matchers": true
+  , "jasmine": true
+  , "getJSONFixture": true
+  , "it": true
+  , "iit": true
+  , "xit": true
+  , "protractor": true
+  , "inject":true
+  , "expect": true
+  , "beforeEach": true
+  , "afterEach": true
+  }
+}

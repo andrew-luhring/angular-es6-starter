@@ -1,0 +1,32 @@
+{
+  "name": "blank",
+  "version": "1.0.0",
+  "authors": [
+    "andrew-luhring <andrew.luhring@gmail.com>"
+  ],
+  "main": "public/main.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.18",
+    "angular-mocks": "~1.2.18",
+    "angular-ui-router": "~0.2.10",
+    "jquery": "~2.1.1",
+    "lodash": "~2.4.1",
+    "es6": "*",
+    "traceur": "~0.0.84"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.17"
+  }
+}

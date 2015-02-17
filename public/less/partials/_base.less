@@ -1,0 +1,47 @@
+@import "font-awesome/font-awesome";
+@import "_fonts";
+@import "_mixins";
+@import "_colors";
+
+
+
+html {
+  font-size: 62.5%;
+}
+html, body{
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+body {
+  text-align: left;
+  color: #333;
+}
+select{
+  .clear_appearance();
+  position: relative;
+}
+//
+  fieldset
+, li
+, ul{
+  .clear_margins;
+  .clear_paddings;
+}
+//
+li {
+  list-style-type: none;
+}
+
+::-webkit-input-placeholder {
+  font-weight: 200;
+}
+::-moz-placeholder{
+  font-weight: 200;
+}
+:-ms-input-placeholder{
+}
+
+
+
+

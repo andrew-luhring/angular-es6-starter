@@ -1,0 +1,24 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "include": ["./js", "./tests", "tests/", "js", "filetest_jsdoc.js"]
+
+    },
+    "plugins": [],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts": {
+        "template": "node_modules/ink-docstrap/template",
+        "encoding": "utf8",
+        "destination": "./jsdoc/",
+        "recurse": true,
+        "query": "value",
+        "private": true,
+        "lenient": true
+
+    }
+}
