@@ -1,3 +1,44 @@
+<section>
+# Installing
+
+Step 1:
+
+```git clone git@github.com:andrew-luhring/angular-es6-starter.git```
+
+Step 2:
+
+```cd angular-es6-starter/```
+
+Step 3:
+
+```npm install```
+
+???
+
+Profit.
+
+</section>
+
+<section>
+# Launching
+
+```npm start```
+
+</section>
+
+<section>
+# Developing
+
+```grunt```
+
+</section>
+
+<section>
+# testing
+
+```karma init config/karma.conf.js```
+
+</section>
 
 <section>
 
