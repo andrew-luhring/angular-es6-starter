@@ -1,4 +1,5 @@
 <section>
+
 # Installing
 
 Step 1:
@@ -20,6 +21,7 @@ Profit.
 </section>
 
 <section>
+
 # Launching
 
 ```npm start```
@@ -27,13 +29,15 @@ Profit.
 </section>
 
 <section>
+
 # Developing
 
-```grunt```
+``` grunt ```
 
 </section>
 
 <section>
+
 # testing
 
 ```karma init config/karma.conf.js```
